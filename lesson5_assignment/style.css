@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document created by Alada De Nobrega, Spring 2019*/
+
+/* body font,line, padding, and background styles ----------------------------  */
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #FDFAFF;
+	background-color: #32353D;
+	padding: 0 41px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.2em;
+	color: #FDFAFF;
+}
+h1 {
+	font-size: 21px;
+	padding: 5px 0;
+	font-variant: small-caps;
+	letter-spacing: 0.6em;
+	line-height: 2.5em;
+}
+h2 {
+	font-size: 19px;
+	padding: 7px;
+	font-variant: small-caps;
+	letter-spacing: 0.6em;
+	background-color: #9C9797;
+}
+h3 {
+	font-size: 18px;
+	letter-spacing: 0.6em;
+	border-bottom-width: 2px;
+	border-bottom-style: inset;
+	border-bottom-color: #9C9797;
+	padding: 5px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #9C9797;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	color: #9C9797;
+	text-decoration: none;
+}
+a:hover {
+	color: #5D88C2;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 13px;
+}
+ol {
+	margin-left: 15px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #9C9797 2px;
+}
+td {
+	padding: 6px;
+	border: solid #9C9797 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #9C9797;
+	text-align: center;
+	padding: 7px;
+	border: solid #9C9796 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #9C9797 2px;
+}
+
+img {
+	border: solid #9C9797 2px;
+
+}
+
+iframe {
+	border: solid #9C9797 2px;
+	padding: 9px;
+	margin: 9px;
+}
+
+/* table 1 styles (table on media.html page)------------------------------------ */
+#table1{
+	border:2px;
+	padding:4px;
+	border-spacing:0;
+}
+
+/* table 2 styles (color palette table styles)------------------------------------ */
+#table2{
+	width: 200px;
+}
+
+#bgcolor1{
+	background-color:#32353D;
+}
+
+#bgcolor2{
+	background-color:#FDFAFF;
+}
+
+#bgcolor3{
+	background-color:#9C9797;
+}
+
+#bgcolor4{
+	background-color:#5D88C2;
+}
+
+/* video styles ------------------------------------ */
+#video{
+	width:560px;
+	height:315px;
+}
