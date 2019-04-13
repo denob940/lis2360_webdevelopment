@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* CSS Document created by Alada De Nobrega, Spring 2019*/
+
+/* body font,line, padding, and background styles ----------------------------  */
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #FDFAFF;
+	background-color: #32353D;
+	padding: 0 41px;
+	margin: 0;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.2em;
+	color: #32353D;
+	padding: 0 41px;
+}
+h1 {
+	font-size: 21px;
+	padding: 0 41px;
+	font-variant: small-caps;
+	letter-spacing: 0.6em;
+	color: #32353D;
+	line-height: 2.5em;
+	margin:0;
+}
+h2 {
+	font-size: 19px;
+	padding: 0 41px;
+	font-variant: small-caps;
+	letter-spacing: 0.6em;
+	background-color: #9C9797;
+}
+h3 {
+	font-size: 18px;
+	letter-spacing: 0.6em;
+	border-bottom-width: 2px;
+	border-bottom-style: inset;
+	border-bottom-color: #9C9797;
+	padding: 0 41px;
+	font-variant: small-caps;
+	font-style: italic;
+	color: #32353D;
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #9C9797;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	color: #9C9797;
+	text-decoration: none;
+}
+a:hover {
+	color: #5D88C2;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 40px;
+}
+ol {
+	margin-left: 59px;
+}
+
+ol li {
+	padding-left: 0px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #9C9797 2px;
+	margin: 40px;
+}
+
+td {
+	padding: 6px;
+	border: solid #9C9797 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #9C9797;
+	text-align: center;
+	padding: 7px;
+	border: solid #9C9796 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #9C9797 2px;
+}
+
+img {
+	border: solid #9C9797 2px;
+
+}
+
+iframe {
+	border: solid #9C9797 2px;
+	padding: 9px;
+	margin: 40px;
+}
+
+/* DIV STYLES FOR PAGE LAYOUT ------------------------------------*/
+
+/*Google car image------------------------------------ */
+#googlecar{
+	margin: 40px;
+}
+
+/* table 1 styles (table on media.html page)------------------------------------ */
+#table1{
+	border:2px;
+	padding:4px;
+	border-spacing:0;
+}
+
+/* table 2 styles (color palette table styles)------------------------------------ */
+#table2{
+	width: 200px;
+}
+
+#bgcolor1{
+	background-color:#32353D;
+}
+
+#bgcolor2{
+	background-color:#FDFAFF;
+}
+
+#bgcolor3{
+	background-color:#9C9797;
+}
+
+#bgcolor4{
+	background-color:#5D88C2;
+}
+
+/* video styles ------------------------------------ */
+#video{
+	width:560px;
+	height:315px;
+}
+
+/* container styles------------------------------------*/
+#container { 
+	width: 900px; 
+	margin: 0 auto; 
+	background-color: #FDFAFF; 
+	overflow: hidden; 
+}
+
+/* header styles------------------------------------*/
+#header { 
+	width: 100%; 
+	background-color: #FDFAFF;
+	border-bottom: 2px solid #9C9797;
+}
+
+/* content styles------------------------------------*/
+#content { 
+	width: 600px;
+	float: left; 
+	padding-bottom: 40px;
+}
+
+/* sidebar styles------------------------------------*/
+#sidebar { 
+	width: 270px; 
+	float: right;
+	margin-top: 100px;
+	margin-right: 20px;
+	background: #FDFAFF;
+	border: 1px solid #9C9797;
+	border-radius: 12px;
+	box-shadow: 10px 10px 5px #9C9797;
+}
+
+/* sidebar p styles------------------------------------*/
+#sidebar p{
+	padding: 0;
+	float: right;
+	color: #32353D;
+	margin-left:20px;
+}
+
+/* footer styles------------------------------------*/
+#footer { 
+	clear: both;
+	width: 100%; 
+	background-color: #FDFAFF;
+	border-top: 2px solid #9C9797;
+}
+
+/* footer p styles------------------------------------*/
+#footer p {
+	margin: 0;
+	padding: 41px;
+	color: #32353D;
+}
