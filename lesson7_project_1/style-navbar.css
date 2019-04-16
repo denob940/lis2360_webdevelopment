@@ -44,7 +44,7 @@ ul#menu li a.button.selected{
 
 /* visited link font colors */
 ul#menu li a.button:visited {
-	color: #5D88C2;
+	color: #FDFAFF;
 }  
 
 ul#menu li a.button:visited.selected{
@@ -59,6 +59,6 @@ ul#menu li a.button:hover {
 
 /* selected button shouldn't change on hover */ 
 ul#menu li a.button:hover.selected{ 
-	background-color: #5D88C2;
+	background-color: #FDFAFF;
 	color: #32353D;
 } 
