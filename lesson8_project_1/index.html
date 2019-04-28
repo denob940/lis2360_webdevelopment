@@ -18,34 +18,7 @@
         
         <!-- Favicon Link -->
         <link rel="shortcut icon" href="favicon.ico" >
-        
-        <!-- JAVASCRIPT CODE -->
-        <!--jquery required for scrolling effect -->
-        
-            <script src="js/jquery.js"></script>
-            <!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->  
 
-                <script>
-            
-                /* global jQuery */
-                /* global targetName */
-                /* global targetLocation */
-                
-                    jQuery(document).ready(function () {
-                        
-                      jQuery('.button').click(function() {
-                          
-                        targetName = jQuery(this).attr('href');
-                        targetLocation = jQuery(targetName).offset().top;
-                        jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
-                        return false;
-                        
-                        });
-                      
-                    });
-                    
-                </script>
-        
         <!-- This original content created by Alada De Nobrega Spring 2019 -->
         
     </head>
@@ -293,6 +266,33 @@
 	        
         </section> <!-- end footer -->
 
+        <!-- JAVASCRIPT CODE -->
+        <!--jquery required for scrolling effect -->
+        
+            <script src="js/jquery.js"></script>
+            <!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->  
+
+                <script>
+            
+                /* global jQuery */
+                /* global targetName */
+                /* global targetLocation */
+                
+                    jQuery(document).ready(function () {
+                        
+                      jQuery('.button').click(function() {
+                          
+                        targetName = jQuery(this).attr('href');
+                        targetLocation = jQuery(targetName).offset().top;
+                        jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+                        return false;
+                        
+                        });
+                      
+                    });
+                    
+                </script>
+        
     </body>
     
 </html>

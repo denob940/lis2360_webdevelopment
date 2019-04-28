@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Website about Self-driving cars, designed using Bootstrap">
+    <meta name="author" content="Alada De Nobrega">
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/carousel/">
+    <title>Self-driving Cars: Future Rides or Pipe dreams?</title>
+    <!--Edited by Alada De Nobrega during Spring 2019 -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    
+    <style>
+    
+      /* Navigation bar alterations */
+      .navbar-inverse {
+            background-color: #c1bebe;      
+            border-color: #32353D;           
+      }
+      .navbar-inverse .navbar-nav > li > a { 
+            color: #32353D; 	           
+      }
+      .navbar-inverse .navbar-brand {
+            color: #32353D;                   
+      }
+      @media (min-width: 768px){            
+            .navbar-wrapper .navbar {           
+              border-radius: 30px;
+            }
+           .navbar-wrapper {                   
+              margin-top: 0px;
+            }
+      }
+      
+      /* Image carousel alterations */
+      .carousel-inner > .item > img {
+            height: auto;                       
+      }
+      @media (max-width: 899px){
+            .carousel{                          
+              height: 400px;
+            }
+            .carousel .item {
+              height: 400px;
+              background-color: #32353D;
+            }
+      }
+      @media (max-width: 719px){           
+            .carousel-inner > .item > img {   
+              width: 719px;
+              max-width: 719px;
+              height: 400px;
+            }
+      }
+      
+      /* Carousel image caption button alterations */
+      .btn-primary {
+            color: #32353D;                 
+            background-color: #c1bebe;        
+            border-color: #32353D;
+      }
+      .btn-primary:hover {  
+            color: #FDFAFF;                     
+            background-color: #5D88C2;        
+            border-color: #FDFAFF;
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    
+    <!-- NAVBAR
+    ================================================== -->    
+    <div class="navbar-wrapper">
+      
+      <div class="container">
+        
+        <nav class="navbar navbar-inverse navbar-static-top">
+          
+          <div class="container">
+            
+            <div class="navbar-header">
+              
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+                <a class="navbar-brand" href="https://www.wired.com/story/self-driving-cars-challenges/">Self-driving Cars: Future Rides or Pipe dreams?</a>
+                
+            </div>
+            
+            <div id="navbar" class="navbar-collapse collapse">
+              
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="https://denob940.github.io/lis2360_webdevelopment/lesson7_project_2">Home</a></li>
+                <li><a href="https://denob940.github.io/lis2360_webdevelopment/lesson7_project_2">Background</a></li>
+                <li><a href="https://denob940.github.io/lis2360_webdevelopment/lesson7_project_2">Why the sudden interest?</a></li>
+                <li class="dropdown">
+                  
+                  <a href="https://www.aboutamazon.com/investing-in-the-u-s" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Factoids<span class="caret"></span></a>
+                 
+                  <ul class="dropdown-menu">
+                    <li><a href="https://emerj.com/ai-adoption-timelines/self-driving-car-timeline-themselves-top-11-automakers">Predictions</a></li>
+                    <li><a href="https://blog.technavio.com/blog/top-10-self-driving-car-companies">Key Players</a></li>
+                    <li><a href="http://www.supplychaintoday.com/quotes-self-driving-cars/">Quotes</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Useful Links</li>
+                    <li><a href="https://emerj.com/ai-adoption-timelines/self-driving-car-timeline-themselves-top-11-automakers">Timeline of Self-driving car predictions</a></li>
+                    <li><a href="https://denob940.github.io/lis2360_webdevelopment/lesson7_project_2">My website on Self-driving cars</a></li>
+                  </ul>
+          
+                </li>
+                
+              </ul>
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+        
+      </div>
+      
+    </div>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      
+      <div class="carousel-inner" role="listbox">
+        
+        <div class="item active">
+          
+          <img class="first-slide" src="images/1.jpg" alt="First slide">
+          
+          <div class="container">
+            
+            <div class="carousel-caption">
+              
+              <h1>History</h1>
+              <p>Find out more about how the idea for self-driving cars came about.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.titlemax.com/resources/history-of-the-autonomous-car/" role="button">Learn more</a></p>
+           
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        <div class="item">
+          
+          <img class="second-slide" src="images/2.jpg" alt="Second slide">
+         
+          <div class="container">
+            
+            <div class="carousel-caption">
+              
+              <h1>What are self-driving cars physically made of?</h1>
+              <p>Be amazed by the procedures used in the creation of self-driving cars worldwide.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.wired.com/story/guide-self-driving-cars/" role="button">Find out more here</a></p>
+           
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        <div class="item">
+          
+          <img class="third-slide" src="images/3.jpg" alt="Third slide">
+          
+          <div class="container">
+            
+            <div class="carousel-caption">
+              
+              <h1>Test drive?</h1>
+              <p>Ever wonder what it's like to be in a self-driving car?</p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=GYXgb7Ctk0I" role="button">Experience it</a></p>
+           
+            </div>
+            
+          </div>
+          
+        </div>
+        
+         <div class="item">
+           
+          <img class="fourth-slide" src="images/4.jpg" alt="Fourth slide">
+          
+          <div class="container">
+            
+            <div class="carousel-caption">
+              
+              <h1>The Law and Self-driving cars</h1>
+              <p>Can we charge a self-driving car with murder?</p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.brookings.edu/blog/techtank/2018/05/01/the-state-of-self-driving-car-laws-across-the-u-s/" role="button">Explore the possibilities here</a></p>
+           
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      
+    </div><!-- /.carousel -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/5.jpg" alt="Elon Musk image" width="140" height="140">
+          <h2>Elon Musk Promises a Self-Driving Tesla in 2020</h2>
+          <p>Elon Musk, CEO of Tesla, claims that his self-driving Tesla car will be so functional at the end of 2020 that passengers will be able to sleep and drive legally for the first time.</p>
+          <p><a class="btn btn-default" href="https://www.wired.com/story/elon-musk-tesla-full-self-driving-2019-2020-promise/" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/6.jpg" alt="Money image" width="140" height="140">
+          <h2>Self-driving cars and the Economy</h2>
+          <p>According to Intel, self-driving cars are projected to add $7 trillion to the world economy by the year 2050. The United States stands to make $2 trillion out of the total world economy earnings.</p>
+          <p><a class="btn btn-default" href="https://www.forbes.com/sites/timworstall/2017/06/03/intel-thinks-self-driving-cars-will-be-a-7-trillion-economy-a-possible-underestimate/" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/7.jpg" alt="Money image" width="140" height="140">
+          <h2>Cost of Self-driving cars</h2>
+          <p>Self-driving cars comprise of expensive materials, one of which is lidar, the material that gives the cars a 3-D sensor. Lidar for one self-driving car can cost a whopping $75,000. This means that coming up with a self-driving car made with a cost-effective budget may present difficulties in the coming years.</p>
+          <p><a class="btn btn-default" href="https://hbr.org/2019/01/the-cost-of-self-driving-cars-will-be-the-biggest-barrier-to-their-adoption" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        
+      </div><!-- /.row -->
+
+      <!-- START THE FEATURETTES -->
+      
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Waymo Google: <span class="text-muted">never put your hands on the wheel ever again.</span></h2>
+          <p class="lead">Started by Google in 2009, Waymo is a self-driving car project being developed to make it safe for drivers to never have to sit in the driver's seat ever again. Wanna be on the wait list? <a href="https://waymo.com/" > Click here </a>to sign up today.</p>
+        </div>
+        
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/8.jpg" alt="Google Waymo Self-driving car image">
+        </div>
+        
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Autopilot: <span class="text-muted">stuck in traffic? Tired of Google Maps? Get Autopilot today.</span></h2>
+          <p class="lead">Autopilot suggests adjustments to your route automatically, which will get you to your destination without you having to wait in line during rush hour traffic or traffic blocks. </p>
+        </div>
+        
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="images/9.jpg" alt="Tesla Self-driving car image">
+        </div>
+        
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Waymo vs.Tesla: <span class="text-muted">which company will create the first functional self-driving car?</span></h2>
+          <p class="lead">Are you a Waymo or Tesla backer? <a href="https://linkto.run/p/BK4GDZNG" > Click here </a>to vote today</p>
+        </div>
+        
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/10.jpg" alt="Waymo vs. Tesla Self-driving car line up image">
+        </div>
+        
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2019 Alada De Nobrega &middot; <a href="https://www.google.com/search?q=definition+of+privacy&rlz=1C5CHFA_en&oq=definition+of+privacy&aqs=chrome..69i57.5166j0j1&sourceid=chrome&ie=UTF-8">Privacy</a> &middot; <a href="https://www.google.com/search?rlz=1C5CHFA_en&ei=2YyuXLyXM6zm_Qbwz4LQAw&q=definition+of+terms&oq=definition+of+terms&gs_l=psy-ab.3..0l10.19568.21989..22167...0.0..0.240.1789.0j10j2......0....1..gws-wiz.......0i71j0i67j0i131.Z2wCr_Iamag">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/docs.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+  
+</html>
